@@ -9,21 +9,33 @@ writes every file below. Do not edit it by hand — the next publish overwrites 
 
 ## Layout
 
+The repository holds **only the channel manifests**. Every binary lives on a
+GitHub release here, not in git — a submodule that accumulated each release
+would be re-downloaded in full by anyone cloning the main repo with
+`--recurse-submodules`, forever.
+
 ```
-stable.json                              the manifest the shipped app polls
-download/v1.2.3/Todo-Dodo.app.tar.gz     the bundle the updater installs
-download/v1.2.3/Todo-Dodo.app.tar.gz.sig its minisign signature
-download/v1.2.3/Todo-Dodo_1.2.3_universal.dmg   the download for a fresh install
+stable.json          the manifest the shipped app polls
 ```
+
+Per release, as assets on the tag `vX.Y.Z`:
+
+```
+Todo-Dodo.app.tar.gz       the bundle the updater downloads and unpacks
+Todo-Dodo.app.tar.gz.sig   its minisign signature
+Todo-Dodo_X.Y.Z_universal.dmg   the download for a fresh install
+```
+
+GitHub attaches its own *Source code* archives to every release and there is no
+way to switch them off. They are inert here: this repository contains a README
+and a manifest, so there is no source in them.
 
 One manifest per channel, at the repository root. `stable.json` is the only one
-today; a `beta.json` would sit beside it, pointing at its own versioned
-directory under `download/`. Adding a channel is a new manifest plus a build
-configured to poll it — the directory layout does not change.
+today; a `beta.json` would sit beside it, pointing at its own releases. Adding a
+channel is a new manifest plus a build configured to poll it.
 
-Versioned directories are never rewritten. A published version keeps its
-artifacts forever, because an app that has not been opened in a year still asks
-for the version its manifest named at the time.
+A published release is never rewritten or deleted. An app that has not been
+opened in a year still asks for exactly what the manifest named at the time.
 
 ## What the manifest says
 
@@ -33,8 +45,8 @@ for the version its manifest named at the time.
   "notes": "…",
   "pub_date": "2026-01-01T00:00:00Z",
   "platforms": {
-    "darwin-aarch64": { "signature": "…", "url": "…/download/v1.2.3/Todo-Dodo.app.tar.gz" },
-    "darwin-x86_64":  { "signature": "…", "url": "…/download/v1.2.3/Todo-Dodo.app.tar.gz" }
+    "darwin-aarch64": { "signature": "…", "url": "…/releases/download/v1.2.3/Todo-Dodo.app.tar.gz" },
+    "darwin-x86_64":  { "signature": "…", "url": "…/releases/download/v1.2.3/Todo-Dodo.app.tar.gz" }
   }
 }
 ```
