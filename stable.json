@@ -1,0 +1,15 @@
+{
+  "version": "0.99.0",
+  "notes": "Todo-Dodo 0.99.0",
+  "pub_date": "2026-09-04T03:50:48.157Z",
+  "platforms": {
+    "darwin-aarch64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUMnkzQkw0N2FKeXJDbFpJK2RZUERYQjBwbCswMVlkRDJMQ0hrd3JSZjlRb0FjVmF5WDNXTEdoazVmdmhpVHVxeTRnL3Jydy9WdnA3V2Vjazh6M2I1UENrK0psSFh2S3drPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg4NDkzNDQ4CWZpbGU6VG9kby1Eb2RvLmFwcC50YXIuZ3oKNmUrZ3psYVpiWEhGZXBGZm16RzBjc0FycGFDWlFJZ1FwQ2VDZDNhV0JUVkpIelVTREVvR2hRZWpvTEVCQkZDL0ZZNmY5YzRiMklqTHpPN0RORlErQ0E9PQo=",
+      "url": "https://github.com/dluxhu/todo-dodo-release/releases/download/v0.99.0/Todo-Dodo.app.tar.gz"
+    },
+    "darwin-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUMnkzQkw0N2FKeXJDbFpJK2RZUERYQjBwbCswMVlkRDJMQ0hrd3JSZjlRb0FjVmF5WDNXTEdoazVmdmhpVHVxeTRnL3Jydy9WdnA3V2Vjazh6M2I1UENrK0psSFh2S3drPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg4NDkzNDQ4CWZpbGU6VG9kby1Eb2RvLmFwcC50YXIuZ3oKNmUrZ3psYVpiWEhGZXBGZm16RzBjc0FycGFDWlFJZ1FwQ2VDZDNhV0JUVkpIelVTREVvR2hRZWpvTEVCQkZDL0ZZNmY5YzRiMklqTHpPN0RORlErQ0E9PQo=",
+      "url": "https://github.com/dluxhu/todo-dodo-release/releases/download/v0.99.0/Todo-Dodo.app.tar.gz"
+    }
+  }
+}
