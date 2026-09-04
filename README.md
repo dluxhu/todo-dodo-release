@@ -1,11 +1,14 @@
 # todo-dodo-release
 
-The update channel for the [Todo-Dodo](https://github.com/dluxhu/todo-dodo)
-desktop app. The app polls a channel manifest here, and downloads the signed
-bundle the manifest names.
+The update channel for the Todo-Dodo desktop app. The app polls a channel
+manifest here, and downloads the signed bundle the manifest names.
 
-**This repository is generated.** `scripts/release-publish.sh` in the main repo
-writes every file below. Do not edit it by hand — the next publish overwrites it.
+Nothing here links to the app's source repository, which is private. This
+repository, its releases and the manifests are all public, so a link would
+disclose it.
+
+**This repository is generated.** The app's release script writes every file
+below. Do not edit it by hand — the next publish overwrites it.
 
 ## Layout
 
