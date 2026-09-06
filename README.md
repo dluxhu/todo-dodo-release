@@ -9,18 +9,21 @@ disclose it.
 
 ## The web app
 
-Runs entirely in the browser — a single self-contained HTML file, no server, no
-account. Data stays in the browser's storage on the machine that loaded it.
+**https://dluxhu.github.io/todo-dodo-release/app/**
 
-| Channel | URL | What it is |
-|---|---|---|
-| **Stable** | https://dluxhu.github.io/todo-dodo-release/app/ | the latest tagged release |
-| **Alpha** | https://dluxhu.github.io/todo-dodo-release/app/alpha/ | the current development build — expect breakage |
+A single self-contained HTML file — no server, no account. Data stays in the
+browser's storage on the machine that loaded it.
 
-The two are separate origins' worth of storage in name only: they share
-`dluxhu.github.io`, so **they share browser storage**. Opening alpha and stable
-in the same browser means one set of tasks, written by two different versions of
-the app. Use a separate browser profile for alpha if that matters.
+This is the **current development build**, not a tagged release. Expect
+breakage, and keep an export if the data matters.
+
+**One build, deliberately.** There is no second channel here, and adding one at
+a path (`app/beta/`, say) would not work: browser storage is scoped by ORIGIN —
+scheme, host and port — never by path. Two builds under `dluxhu.github.io` share
+one storage area, so the newer one migrates the older one's database and then
+deletes the source, which is correct on a real upgrade and destroys the other
+channel's data here. A second channel needs a separate origin, not a
+subdirectory.
 
 Folder sync needs the File System Access API, which exists only in desktop
 Chromium browsers (Chrome, Edge, or Brave with the flag enabled). Everything
@@ -29,15 +32,14 @@ else works anywhere.
 ## Layout
 
 ```
-app/index.html         the stable web app
-app/alpha/index.html   the development build
-stable.json            the manifest the shipped desktop app polls
-.nojekyll              serve paths verbatim; skip the Jekyll build
+app/index.html   the web app
+stable.json      the manifest the shipped desktop app polls
+.nojekyll        serve paths verbatim; skip the Jekyll build
 ```
 
 **Only `stable.json` is generated** — the desktop release script writes it, and
 the next publish overwrites it, so do not hand-edit that file. The README and
-the `app/` builds are placed deliberately; editing them is fine.
+the `app/` build are placed deliberately; editing them is fine.
 
 Desktop binaries are **not** in git. Each lives as an asset on a GitHub release
 here, because a submodule that accumulated every release would be re-downloaded
@@ -53,7 +55,7 @@ Todo-Dodo_X.Y.Z_universal.dmg   the download for a fresh install
 
 GitHub attaches its own *Source code* archives to every release and there is no
 way to switch them off. They are inert here: this repository contains a README,
-a manifest and two built HTML files, so there is no source in them.
+a manifest and one built HTML file, so there is no source in them.
 
 One manifest per channel, at the repository root. `stable.json` is the only one
 today; a `beta.json` would sit beside it, pointing at its own releases. Adding a
