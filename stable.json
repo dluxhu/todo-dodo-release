@@ -1,15 +1,15 @@
 {
-  "version": "1.0.0-alpha1",
-  "notes": "Todo-Dodo 1.0.0-alpha1",
-  "pub_date": "2026-09-14T16:42:55.172Z",
+  "version": "1.0.0-alpha2",
+  "notes": "Todo-Dodo 1.0.0-alpha2",
+  "pub_date": "2026-09-17T06:46:28.877Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUMnkzQkw0N2FKeXZPOHFPWWRhSjZGL1c1WUdOalRTWjJWcEtFU2xQN3NNL0FnSW9NbWtiZHYrUHBkQytXRm9LdHFMTzJjSk9OQVBybUMxK1AwVitEeUorM2dBVTdzcFFFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5NDAzNzUyCWZpbGU6VG9kby1Eb2RvLmFwcC50YXIuZ3oKT2pjV0w0Ull0MUQ4WUN6UnZpZkpKc1dTaCtod3JsNnJKRTB1TFFFc21ZNWV3TWY3K2FaTjRQbmExeGdaZjJLSFd1OVBlQXlqNmlaVStCd1l4ZUFZQ1E9PQo=",
-      "url": "https://github.com/dluxhu/todo-dodo-release/releases/download/v1.0.0-alpha1/Todo-Dodo.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUMnkzQkw0N2FKeW1kRVptUGFaa2w1cndnb0M2cktzam85cTVId1R6dFZGbWdyZjBiRVUzelVCNElYeGs1em1uNEphTmtWdCtjRGx1MWNTV05xTzUzcWJJbFVxWGoyUUFvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5NjI3MzQyCWZpbGU6VG9kby1Eb2RvLmFwcC50YXIuZ3oKS0dSUTF0WnYyeW5PZjgxQ2xUTmxJODBZeDRRUTBKZVE3a01GNmJ6Z0E5MGxia2xsRWFrSUEyazFDcXMwVkR0V09jSVNLR1BHL1FMdXdmVUczYVZCQmc9PQo=",
+      "url": "https://github.com/dluxhu/todo-dodo-release/releases/download/v1.0.0-alpha2/Todo-Dodo.app.tar.gz"
     },
     "darwin-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUMnkzQkw0N2FKeXZPOHFPWWRhSjZGL1c1WUdOalRTWjJWcEtFU2xQN3NNL0FnSW9NbWtiZHYrUHBkQytXRm9LdHFMTzJjSk9OQVBybUMxK1AwVitEeUorM2dBVTdzcFFFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5NDAzNzUyCWZpbGU6VG9kby1Eb2RvLmFwcC50YXIuZ3oKT2pjV0w0Ull0MUQ4WUN6UnZpZkpKc1dTaCtod3JsNnJKRTB1TFFFc21ZNWV3TWY3K2FaTjRQbmExeGdaZjJLSFd1OVBlQXlqNmlaVStCd1l4ZUFZQ1E9PQo=",
-      "url": "https://github.com/dluxhu/todo-dodo-release/releases/download/v1.0.0-alpha1/Todo-Dodo.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUMnkzQkw0N2FKeW1kRVptUGFaa2w1cndnb0M2cktzam85cTVId1R6dFZGbWdyZjBiRVUzelVCNElYeGs1em1uNEphTmtWdCtjRGx1MWNTV05xTzUzcWJJbFVxWGoyUUFvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5NjI3MzQyCWZpbGU6VG9kby1Eb2RvLmFwcC50YXIuZ3oKS0dSUTF0WnYyeW5PZjgxQ2xUTmxJODBZeDRRUTBKZVE3a01GNmJ6Z0E5MGxia2xsRWFrSUEyazFDcXMwVkR0V09jSVNLR1BHL1FMdXdmVUczYVZCQmc9PQo=",
+      "url": "https://github.com/dluxhu/todo-dodo-release/releases/download/v1.0.0-alpha2/Todo-Dodo.app.tar.gz"
     }
   }
 }
